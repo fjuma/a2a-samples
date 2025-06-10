@@ -19,10 +19,10 @@ from a2a.types import (
     AgentCard,
     AgentSkill,
 )
-from agents.airbnb_planner_multiagent.airbnb_agent.agent_executor import (
+from agent_executor import (
     AirbnbAgentExecutor,
 )
-from agents.airbnb_planner_multiagent.airbnb_agent.airbnb_agent import (
+from airbnb_agent import (
     AirbnbAgent,
 )
 from dotenv import load_dotenv

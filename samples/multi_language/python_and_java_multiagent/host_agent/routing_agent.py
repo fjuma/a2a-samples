@@ -19,7 +19,7 @@ from a2a.types import (
     SendMessageSuccessResponse,
     Task,
 )
-from agents.airbnb_planner_multiagent.host_agent.remote_agent_connection import (
+from remote_agent_connection import (
     RemoteAgentConnections,
     TaskUpdateCallback,
 )

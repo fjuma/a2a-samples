@@ -104,13 +104,15 @@ WEA_AGENT_URL=http://localhost:10001
 Run the airbnb agent server:
 
 ```bash
-cd airbnb_agent
+cd ../airbnb_agent
 uv run .
 ```
 
 ## 2. Build our A2A Java SDK
 
 > *⚠️ This is a temporary step until our A2A Java SDK is released*
+
+Open a new terminal and build the A2A Java SDK:
 
 ```bash
 git clone https://github.com/fjuma/a2a-java-sdk.git
@@ -123,7 +125,7 @@ mvn clean install
 Open a new terminal and run the weather agent:
 
 ```bash
-cd samples/python/agents/airbnb_planner_multiagent/weather_agent
+cd a2a-samples/samples/multi_language/python_and_java_multiagent/weather_agent
 mvn quarkus:dev
 ```
 
@@ -133,11 +135,13 @@ Note that Quarkus will automatically start up the weather Python MCP server that
 Open a new terminal and run the host agent server:
 
 ```bash
-cd samples/python/agents/airbnb_planner_multiagent/host_agent
+cd a2a-samples/samples/multi_language/python_and_java_multiagent/host_agent
 uv run app.py
 ```
 
-## 5. Test at the UI
+## 5. Test using the UI
+
+From your browser, navigate to http://0.0.0.0:8083.
 
 Here are example questions:
 

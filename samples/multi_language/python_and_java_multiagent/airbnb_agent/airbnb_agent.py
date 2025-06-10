@@ -54,11 +54,7 @@ class AirbnbAgent:
         """
         logger.info('Initializing AirbnbAgent with preloaded MCP tools...')
         try:
-            model = os.getenv('GOOGLE_GENAI_MODEL')
-            if not model:
-                raise ValueError(
-                    'GOOGLE_GENAI_MODEL environment variable is not set'
-                )
+            model = 'gemini-2.5-flash-preview-04-17'
 
             if os.getenv('GOOGLE_GENAI_USE_VERTEXAI') == 'TRUE':
                 # If not using Vertex AI, initialize with Google Generative AI
