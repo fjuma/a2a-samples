@@ -34,18 +34,27 @@ public class WeatherAgentExecutorProducer {
 
         @Override
         public void execute(RequestContext context, EventQueue eventQueue) throws JSONRPCError {
-            // WIP
-            String result = weatherAgent.chat("tell me about the weather in LA, CA");
-            eventQueue.enqueueEvent(A2A.toAgentMessage(result));
-                /*TaskUpdater updater = new TaskUpdater(eventQueue, context.getTaskId(), context.getContextId());
+            // temporarily hardcoding a message to test
+            // // doesn't work, missing a tool to get forecast by city similar to the python one here
+            // https://github.com/google-a2a/a2a-samples/blob/main/samples/python/agents/airbnb_planner_multiagent/weather_agent/weather_mcp.py#L177
+            // String result = weatherAgent.chat("tell me about the weather in LA, CA");
 
-                // immediately notify that the task is submitted
-                if (context.getTask() == null) {
-                    updater.submit();
-                }
-                updater.startWork();
+            // a message like this does work
+            // String result = weatherAgent.chat("weather alert for LA, CA");
 
-                // await process request*/
+            // TODO: Need to update this to be similar to what's done in the python executor:
+            // https://github.com/google-a2a/a2a-samples/blob/main/samples/python/agents/airbnb_planner_multiagent/weather_agent/weather_executor.py
+            /*TaskUpdater updater = new TaskUpdater(eventQueue, context.getTaskId(), context.getContextId());
+
+            // immediately notify that the task is submitted
+            if (context.getTask() == null) {
+                updater.submit();
+            }
+            updater.startWork();
+
+            // await process request
+            ...
+             */
 
         }
 
