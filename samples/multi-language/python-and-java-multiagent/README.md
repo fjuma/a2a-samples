@@ -62,15 +62,8 @@ uv run .
 
 ## 2. Run Weather Agent
 
-First, build the weather MCP server that we'll be using:
 
-```bash
-git clone https://github.com/quarkiverse/quarkus-mcp-server.git
-cd quarkus-mcp-server/samples/weather
-./mvnw install
-```
-
-The weather MCP server that we just built will be automatically started by the weather agent.
+The weather Python MCP server that we just built will be automatically started by the weather agent.
 
 Open a new terminal and run the weather agent:
 
