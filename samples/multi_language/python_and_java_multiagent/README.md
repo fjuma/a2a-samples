@@ -136,7 +136,7 @@ Open a new terminal and run the host agent server:
 
 ```bash
 cd a2a-samples/samples/multi_language/python_and_java_multiagent/host_agent
-uv run app.py
+uv run .
 ```
 
 ## 5. Test using the UI

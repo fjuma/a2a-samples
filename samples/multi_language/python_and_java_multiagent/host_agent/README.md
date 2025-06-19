@@ -2,5 +2,5 @@
 
 - Start the server
     ```bash
-    uv run app.py
+    uv run .
     ```
