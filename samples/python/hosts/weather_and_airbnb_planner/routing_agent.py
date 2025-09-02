@@ -62,9 +62,6 @@ def create_send_message_payload(
         },
     }
 
-    if task_id:
-        payload['message']['taskId'] = task_id
-
     if context_id:
         payload['message']['contextId'] = context_id
     return payload
@@ -257,9 +254,6 @@ class RoutingAgent:
                 'messageId': message_id,
             },
         }
-
-        if task_id:
-            payload['message']['taskId'] = task_id
 
         if context_id:
             payload['message']['contextId'] = context_id
