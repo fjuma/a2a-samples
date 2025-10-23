@@ -1,18 +1,18 @@
 /// usr/bin/env jbang "$0" "$@" ; exit $?
-// DEPS io.github.a2asdk:a2a-java-sdk-client:0.3.0.Beta2
-// DEPS io.github.a2asdk:a2a-java-sdk-client-transport-jsonrpc:0.3.0.Beta2
-// DEPS io.github.a2asdk:a2a-java-sdk-client-transport-grpc:0.3.0.Beta2
-// DEPS io.github.a2asdk:a2a-java-sdk-client-transport-rest:0.3.0.Beta2
-// DEPS io.github.a2asdk:a2a-java-sdk-client-transport-spi:0.3.0.Beta2
-// DEPS com.fasterxml.jackson.core:jackson-databind:2.15.2
-// DEPS io.grpc:grpc-netty-shaded:1.69.1
-// DEPS org.keycloak:keycloak-authz-client:25.0.1
-// SOURCES TestClient.java
-// SOURCES util/KeycloakUtil.java
-// SOURCES util/EventHandlerUtil.java
-// SOURCES util/CachedToken.java
-// SOURCES KeycloakOAuth2CredentialService.java
-// FILES ../../../../../resources/keycloak.json
+//DEPS io.github.a2asdk:a2a-java-sdk-client:0.3.0.Beta2
+//DEPS io.github.a2asdk:a2a-java-sdk-client-transport-jsonrpc:0.3.0.Beta2
+//DEPS io.github.a2asdk:a2a-java-sdk-client-transport-grpc:0.3.0.Beta2
+//DEPS io.github.a2asdk:a2a-java-sdk-client-transport-rest:0.3.0.Beta2
+//DEPS io.github.a2asdk:a2a-java-sdk-client-transport-spi:0.3.0.Beta2
+//DEPS com.fasterxml.jackson.core:jackson-databind:2.15.2
+//DEPS io.grpc:grpc-netty-shaded:1.69.1
+//DEPS org.keycloak:keycloak-authz-client:25.0.1
+//SOURCES TestClient.java
+//SOURCES util/KeycloakUtil.java
+//SOURCES util/EventHandlerUtil.java
+//SOURCES util/CachedToken.java
+//SOURCES KeycloakOAuth2CredentialService.java
+//FILES ../../../../../resources/keycloak.json
 
 package com.samples.a2a.client;
 

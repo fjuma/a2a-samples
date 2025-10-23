@@ -80,7 +80,7 @@ public final class EventHandlerUtil {
     for (Artifact artifact : artifacts) {
       textBuilder.append(extractTextFromParts(artifact.parts()));
     }
-    String text = textBuilder.toString();
+    return textBuilder.toString();
   }
 
   /**
