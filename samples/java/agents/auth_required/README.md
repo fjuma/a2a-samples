@@ -51,37 +51,26 @@ The agent is built using Quarkus LangChain4j and makes use of the [A2A Java](htt
 ### 1. Set Up Google OAuth2 Credentials
 
 1. **Create a new project** in the [Google Cloud Console](https://console.cloud.google.com/)
-   - Click "Select a project" at the top of the page
-   - Click "NEW PROJECT"
-   - Enter a project name (e.g., "Meeting Scheduler Agent")
-   - Click "CREATE"
+   - Follow the instructions [here](https://developers.google.com/workspace/guides/create-project)
 
 2. **Enable the Google Calendar API**
-   - Go to "APIs & Services" > "Library"
+   - Go to "APIs & Services" for your project > "Library"
    - Search for "Google Calendar API"
    - Click on it and click "ENABLE"
 
 3. **Configure OAuth consent screen**
-   - Go to "APIs & Services" > "OAuth consent screen"
-   - Select "External" user type (allows any Google user to authenticate)
-   - Click "CREATE"
-   - Fill in the required fields:
+   - Follow the instructions [here](https://developers.google.com/workspace/guides/configure-oauth-consent)
+   - Fill in the required fields, e.g.,:
      - App name: "Meeting Scheduler Agent" (or your preferred name)
      - User support email: Your email address
      - Developer contact information: Your email address
-   - Click "SAVE AND CONTINUE"
-   - On the Scopes page, click "ADD OR REMOVE SCOPES"
-     - Search for "Google Calendar API"
-     - Select `https://www.googleapis.com/auth/calendar` scope
-     - Click "UPDATE" then "SAVE AND CONTINUE"
-   - Skip adding test users (or add your Google account for testing)
-   - Click "SAVE AND CONTINUE" and then "BACK TO DASHBOARD"
+     - Be sure to select External for user type and add yourself as a test user
+     - When adding a scope, search for "Google Calendar API" and select the `https://www.googleapis.com/auth/calendar` scope
 
 4. **Create OAuth 2.0 Client ID**
-   - Go to "APIs & Services" > "Credentials"
-   - Click "CREATE CREDENTIALS" > "OAuth client ID"
+   - Go to "Clients" for your project and create a new client
    - Select "Web application" as application type
-   - Enter a name (e.g., "Meeting Scheduler Web Client")
+   - Enter a name (e.g., "Meeting Scheduler Agent")
    - Under "Authorized redirect URIs", click "ADD URI"
    - Add: `http://localhost:11000/authenticate`
    - Click "CREATE"
